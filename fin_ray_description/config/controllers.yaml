@@ -1,0 +1,17 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    fin_ray_controller:
+      type: position_controllers/JointGroupPositionController
+
+fin_ray_controller:
+  ros__parameters:
+    joints:
+      - dedo1_base_to_joint_1_revolute
+      - dedo2_base_to_joint_1_revolute
+      - dedo3_base_to_joint_1_revolute
+      - dedo4_base_to_joint_1_revolute
