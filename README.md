@@ -9,7 +9,7 @@ Garra robótica baseada no efeito Fin Ray, desenvolvida em ROS2 Humble + Gazebo 
 - **`fin_ray_description/`** — pacote ROS2 com a descrição da garra (URDF/Xacro), meshes, launch files, configuração dos controllers e o nó de movimentação.
 - **`FINRAY_GRIPPER_MANUAL.pdf`** — documento informativo detalhando o projeto: por que o efeito Fin Ray foi escolhido, como a deformação foi implementada no Gazebo Classic (modelo de corpo pseudo-rígido), como o agarre é garantido (IFRA Link Attacher), estrutura de pastas, tutorial de execução e como o URDF e o nó `gripper_mover.cpp` estão organizados.
 
-Para entender a fundo as decisões de design e a lógica do código, consulte o PDF — este README cobre só o essencial pra rodar o projeto.
+Para entender a fundo as decisões de design e a lógica do código, consulte o PDF, este README cobre só o essencial pra rodar o projeto.
 
 ## Pré-requisitos
 
@@ -17,11 +17,6 @@ Para entender a fundo as decisões de design e a lógica do código, consulte o 
 - Gazebo Classic
 - Pacotes ROS2: `ros2_control`, `ros2_controllers`, `gazebo_ros2_control`, `gazebo_ros_pkgs`, `xacro`
 - [IFRA Link Attacher](https://github.com/IFRA-Cranfield/IFRA_LinkAttacher) — precisa estar clonado dentro do `src/` do workspace, junto com o `fin_ray_description` (fornece o plugin `libgazebo_link_attacher.so` e as mensagens `linkattacher_msgs`)
-
-```bash
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers \
-  ros-humble-gazebo-ros2-control ros-humble-gazebo-ros-pkgs ros-humble-xacro
-```
 
 ## Build
 
