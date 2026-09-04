@@ -2,7 +2,7 @@
 
 Garra robótica baseada no efeito Fin Ray, desenvolvida em ROS2 Humble + Gazebo Classic pelo Laboratório de Engenharia de Sistemas e Robótica, como parte de um projeto de Iniciação Científica.
 
-> **Status:** versão preliminar (v0.1). Instabilidades podem ocorrer — otimizações e ajuste fino de parâmetros seguem em desenvolvimento.
+> **Status:** versão preliminar (v0.1). Instabilidades podem ocorrer -> otimizações e ajuste fino de parâmetros seguem em desenvolvimento.
 
 ## O que tem neste repositório
 
